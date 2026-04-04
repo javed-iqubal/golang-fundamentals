@@ -6,9 +6,9 @@ func main() {
 
 	// base values
 
-	a, b, c, d := 10, 30, 20, 50
-	//x, y := true, false
-	//p := 12
+	a, b, c, d := 10, 30, 50, 40
+	x, y := true, false
+	p := 12
 
 	// Arithmetic
 
@@ -32,5 +32,17 @@ func main() {
 	// compund
 	e += 2
 	fmt.Printf("Compound: e += 2 -> %d \n", e)
+
+	// comparision
+	fmt.Printf("Comparision: %d == %d -> %t, %d > %d -> %t \n", a, b, a == b, c, d, c > d)
+
+	// Logical
+	fmt.Printf("Logical: %t && %t -> %t, %t||%t -> %t, !%t -> %t \n", x, y, x && y, x, y, x || y, x, !x)
+
+	//Bitwise
+	fmt.Printf("Bitwise: %b & %b -> %b (%d), %b | %b -> %b (%d) \n", p, b, p&b, p, b, p|b)
+
+	// Shift
+	fmt.Printf("Shift: %b << 1 = %b (%d), %b >> 1 = %b (%d) \n", p, p<<1, p<<1, p, p>>1, p>>1)
 
 }
