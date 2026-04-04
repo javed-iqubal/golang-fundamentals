@@ -8,7 +8,7 @@ func main() {
 
 	a, b, c, d := 10, 30, 50, 40
 	x, y := true, false
-	p := 12
+	p, q := 12, 9
 
 	// Arithmetic
 
@@ -44,5 +44,9 @@ func main() {
 
 	// Shift
 	fmt.Printf("Shift: %b << 1 = %b (%d), %b >> 1 = %b (%d) \n", p, p<<1, p<<1, p, p>>1, p>>1)
+
+	// AND NOT
+	fmt.Printf("AND NOT: %b &^ %b = %b (%d) \n", p, 8, p&^8, p&^8)
+	fmt.Printf("AND NOT: %b &^ %b = %b (%d) \n", q, 1, q&^1, q&^1)
 
 }
